@@ -1,0 +1,199 @@
+/*
+ * CandidLoom design tokens, 0.1.2.
+ * Navy shell, slate text, green reserved for "protected", red for critical,
+ * amber for warning. One radius family, one soft elevation for floating
+ * panels. Inter is bundled locally (assets/fonts, SIL OFL 1.1); nothing is
+ * fetched from the network.
+ * Every text/background pair below meets WCAG 2.2 AA (4.5:1 text, 3:1 UI).
+ */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../assets/fonts/inter-var-latin.woff2') format('woff2');
+}
+
+:root,
+:root[data-theme='light'],
+:root[data-theme='system'] {
+  color-scheme: light;
+  --ui-bg: #f4f6f9;
+  --ui-surface: #ffffff;
+  --ui-surface-raised: #eef1f5;
+  --ui-surface-muted: #f8fafc;
+  --ui-text: #0f172a;
+  --ui-muted: #475569;
+  --ui-border: #dde3ea;
+  --ui-border-strong: #7b8798;
+  --ui-accent: #1e3a5f;
+  --ui-accent-contrast: #ffffff;
+  --ui-accent-soft: #e6edf5;
+  --ui-shell: #1e3a5f;
+  --ui-shell-text: #ffffff;
+  --ui-shell-muted: #c9d5e3;
+  --ui-protected: #146c36;
+  --ui-protected-contrast: #ffffff;
+  --ui-protected-soft: #e8f5ed;
+  --ui-risk: #b91c1c;
+  --ui-risk-contrast: #ffffff;
+  --ui-risk-soft: #fdeded;
+  --ui-warning: #9a5a06;
+  --ui-warning-contrast: #ffffff;
+  --ui-warning-soft: #fdf3e1;
+  --ui-focus: #1d4ed8;
+  --ui-selection: #cfdcf0;
+  --ui-overlay: rgb(15 23 42 / 45%);
+  --ui-shadow-sm: 0 1px 2px rgb(15 23 42 / 6%), 0 1px 3px rgb(15 23 42 / 6%);
+  --ui-shadow-lg: 0 10px 28px rgb(15 23 42 / 14%), 0 2px 6px rgb(15 23 42 / 6%);
+
+  --ui-space-0: 0;
+  --ui-space-1: 4px;
+  --ui-space-2: 8px;
+  --ui-space-3: 12px;
+  --ui-space-4: 16px;
+  --ui-space-5: 24px;
+  --ui-space-6: 32px;
+  --ui-space-7: 40px;
+  --ui-space-8: 48px;
+
+  /* Controls 6px, containers 8px, floating panels 12px, pills full. */
+  --ui-radius-xs: 4px;
+  --ui-radius-sm: 6px;
+  --ui-radius-md: 8px;
+  --ui-radius-lg: 12px;
+  --ui-radius-pill: 999px;
+
+  --ui-font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ui-font-mono: ui-monospace, 'SFMono-Regular', 'Cascadia Mono', Consolas, 'Liberation Mono', monospace;
+  /* Type scale: 12 / 13 / 14 / 16 / 20 / 24 px at the default root size. */
+  --ui-font-size-xs: 0.75rem;
+  --ui-font-size-sm: 0.8125rem;
+  --ui-font-size-md: 0.875rem;
+  --ui-font-size-lg: 1rem;
+  --ui-font-size-xl: 1.25rem;
+  --ui-font-size-2xl: 1.5rem;
+  --ui-line-compact: 1.3;
+  --ui-line-body: 1.5;
+  --ui-tracking-tight: -0.011em;
+  --ui-weight-regular: 400;
+  --ui-weight-medium: 500;
+  --ui-weight-strong: 600;
+
+  --ui-duration-fast: 120ms;
+  --ui-duration-standard: 200ms;
+  --ui-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ui-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --ui-bg: #0b1220;
+  --ui-surface: #111a2b;
+  --ui-surface-raised: #18233a;
+  --ui-surface-muted: #0e1626;
+  --ui-text: #e7ecf3;
+  --ui-muted: #9aa8bc;
+  --ui-border: #24324a;
+  --ui-border-strong: #5b6b84;
+  --ui-accent: #8fb4e6;
+  --ui-accent-contrast: #0b1220;
+  --ui-accent-soft: #1a2a44;
+  --ui-shell: #16294a;
+  --ui-shell-text: #ffffff;
+  --ui-shell-muted: #b5c4d8;
+  --ui-protected: #5ccb8a;
+  --ui-protected-contrast: #0b1220;
+  --ui-protected-soft: #12301f;
+  --ui-risk: #f28b82;
+  --ui-risk-contrast: #0b1220;
+  --ui-risk-soft: #3a1717;
+  --ui-warning: #e9b04f;
+  --ui-warning-contrast: #0b1220;
+  --ui-warning-soft: #33260f;
+  --ui-focus: #8fb4e6;
+  --ui-selection: #2a4a78;
+  --ui-overlay: rgb(3 7 15 / 70%);
+  --ui-shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+  --ui-shadow-lg: 0 12px 32px rgb(0 0 0 / 50%), 0 2px 6px rgb(0 0 0 / 30%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme='system'] {
+    color-scheme: dark;
+    --ui-bg: #0b1220;
+    --ui-surface: #111a2b;
+    --ui-surface-raised: #18233a;
+    --ui-surface-muted: #0e1626;
+    --ui-text: #e7ecf3;
+    --ui-muted: #9aa8bc;
+    --ui-border: #24324a;
+    --ui-border-strong: #5b6b84;
+    --ui-accent: #8fb4e6;
+    --ui-accent-contrast: #0b1220;
+    --ui-accent-soft: #1a2a44;
+    --ui-shell: #16294a;
+    --ui-shell-text: #ffffff;
+    --ui-shell-muted: #b5c4d8;
+    --ui-protected: #5ccb8a;
+    --ui-protected-contrast: #0b1220;
+    --ui-protected-soft: #12301f;
+    --ui-risk: #f28b82;
+    --ui-risk-contrast: #0b1220;
+    --ui-risk-soft: #3a1717;
+    --ui-warning: #e9b04f;
+    --ui-warning-contrast: #0b1220;
+    --ui-warning-soft: #33260f;
+    --ui-focus: #8fb4e6;
+    --ui-selection: #2a4a78;
+    --ui-overlay: rgb(3 7 15 / 70%);
+    --ui-shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+    --ui-shadow-lg: 0 12px 32px rgb(0 0 0 / 50%), 0 2px 6px rgb(0 0 0 / 30%);
+  }
+}
+
+@media (forced-colors: active) {
+  :root,
+  :root[data-theme='light'],
+  :root[data-theme='dark'],
+  :root[data-theme='system'] {
+    --ui-bg: Canvas;
+    --ui-surface: Canvas;
+    --ui-surface-raised: Canvas;
+    --ui-surface-muted: Canvas;
+    --ui-text: CanvasText;
+    --ui-muted: CanvasText;
+    --ui-border: ButtonBorder;
+    --ui-border-strong: ButtonText;
+    --ui-accent: ButtonText;
+    --ui-accent-contrast: ButtonFace;
+    --ui-accent-soft: Canvas;
+    --ui-shell: Canvas;
+    --ui-shell-text: CanvasText;
+    --ui-shell-muted: CanvasText;
+    --ui-protected: LinkText;
+    --ui-protected-contrast: Canvas;
+    --ui-protected-soft: Canvas;
+    --ui-risk: Mark;
+    --ui-risk-contrast: MarkText;
+    --ui-risk-soft: Canvas;
+    --ui-warning: Highlight;
+    --ui-warning-contrast: HighlightText;
+    --ui-warning-soft: Canvas;
+    --ui-focus: Highlight;
+    --ui-selection: Highlight;
+    --ui-overlay: Canvas;
+    --ui-shadow-sm: none;
+    --ui-shadow-lg: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root,
+  :root[data-theme='light'],
+  :root[data-theme='dark'],
+  :root[data-theme='system'] {
+    --ui-duration-fast: 0ms;
+    --ui-duration-standard: 0ms;
+  }
+}
