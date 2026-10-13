@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="system">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,8 +7,8 @@
   <meta name="description" content="The page you requested does not exist on candidloom.com." />
   <meta name="robots" content="noindex" />
   <link rel="canonical" href="https://candidloom.com/404.html" />
-  <meta name="theme-color" content="#1e3a5f" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#16294a" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0e0f1e" media="(prefers-color-scheme: dark)" />
   <meta name="color-scheme" content="light dark" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CandidLoom" />
@@ -32,15 +32,13 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="wrap">
-      <a class="wordmark" href="/" aria-label="CandidLoom home"><span class="mark" aria-hidden="true"><span></span><span></span><span></span></span>CandidLoom</a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="/#products">Products</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="site-header-inner">
+      <a class="wordmark" href="index.html" aria-label="CandidLoom home"><span class="mark" aria-hidden="true"><span></span><span></span><span></span></span>CandidLoom</a>
+      <div class="site-nav-shell" data-open="false">
+        <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Primary"><a href="index.html#product">AI Prompt Leak Guard</a><a href="index.html#pricing">Pricing</a><a href="faq.html">FAQ</a><a href="index.html#contact">Contact</a></nav>
+        <a class="button button-primary button-small nav-cta" href="https://chromewebstore.google.com/detail/ai-prompt-leak-guard/biadjabdfbomjiohhmddppjheadcidjg">Add to Chrome</a>
+      </div>
     </div>
   </header>
   <main id="main" class="page">
@@ -55,18 +53,17 @@
     </div>
   </main>
   <footer class="site-footer">
-    <div class="wrap">
-      <p class="copyright">&copy; 2026 CandidLoom</p>
-      <nav aria-label="Footer">
-        <ul>
-          <li><a href="/privacy.html">Privacy</a></li>
-          <li><a href="/terms.html">Terms</a></li>
-          <li><a href="/refunds.html">Refunds</a></li>
-          <li><a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/">AI Prompt Leak Guard</a></li>
-          <li><a href="mailto:loomcandid@gmail.com">loomcandid@gmail.com</a></li>
-        </ul>
-      </nav>
+    <div class="site-footer-inner">
+      <div class="footer-about">
+        <a class="wordmark" href="index.html"><span class="mark" aria-hidden="true"><span></span><span></span><span></span></span>CandidLoom</a>
+        <p>Small privacy tools that keep your data on your device.</p>
+      </div>
+      <div class="footer-col"><h2>Product</h2><ul><li><a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/">AI Prompt Leak Guard</a></li><li><a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/pricing.html">Pricing</a></li><li><a href="https://aplg-billing-production.pages.dev/">Get Plus</a></li></ul></div>
+      <div class="footer-col"><h2>Help</h2><ul><li><a href="faq.html">FAQ</a></li><li><a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/docs.html">Product help</a></li><li><a href="mailto:loomcandid@gmail.com">Email us</a></li></ul></div>
+      <div class="footer-col"><h2>Legal</h2><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="refunds.html">Refunds</a></li></ul></div>
+      <p class="footer-legal">&copy; 2026 CandidLoom. Operated by SUNIL KUMAR GURJALA. This website sets no cookies and has no analytics or ads.</p>
     </div>
   </footer>
+  <script src="assets/navigation.js"></script>
 </body>
 </html>
