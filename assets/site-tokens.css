@@ -1,0 +1,85 @@
+/*
+ * Website tokens for AI Prompt Leak Guard and CandidLoom (2026-10).
+ * The websites have their own identity: cool paper, ink, a highlighter
+ * yellow that marks what was found, and a redaction bar that covers it.
+ * Safe green is kept only for "protected", as in the extension.
+ * styles.css uses these custom properties only and holds no colour values.
+ */
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('fonts/bricolage-grotesque-latin-wght.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/inter-var-latin.woff2') format('woff2');
+}
+
+:root {
+  color-scheme: light;
+  --paper: #f6f7f9;
+  --surface: #ffffff;
+  --surface-sunk: #eceef3;
+  --ink: #15172e;
+  --ink-soft: #4a4d66;
+  --line: #d9dce6;
+  --line-strong: #b9bdcc;
+  --redact: #0b0c17;
+  --mark: #ffd447;
+  --on-mark: #15172e;
+  --signal: #3d3fd6;
+  --signal-strong: #2c2eb0;
+  --on-signal: #ffffff;
+  --safe: #1a7f49;
+  --safe-tint: #e2f3e9;
+  --band: #15172e;
+  --band-raised: #22254a;
+  --on-band: #f3f4fb;
+  --on-band-soft: #b9bcd6;
+  --focus: #3d3fd6;
+  --shadow: 0 1px 2px rgb(21 23 46 / 6%), 0 12px 32px rgb(21 23 46 / 8%);
+
+  --font-display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --wrap: 72rem;
+  --gutter: clamp(16px, 4vw, 40px);
+  --section: clamp(56px, 9vw, 112px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --paper: #0e0f1e;
+    --surface: #161831;
+    --surface-sunk: #11132a;
+    --ink: #ecedf7;
+    --ink-soft: #a9acc6;
+    --line: #2a2d4d;
+    --line-strong: #3b3f66;
+    --redact: #e7e8f4;
+    --mark: #ffd447;
+    --on-mark: #15172e;
+    --signal: #9294ff;
+    --signal-strong: #b3b4ff;
+    --on-signal: #0e0f1e;
+    --safe: #4ade80;
+    --safe-tint: #12301f;
+    --band: #1b1d3b;
+    --band-raised: #26294f;
+    --on-band: #f3f4fb;
+    --on-band-soft: #b9bcd6;
+    --focus: #b3b4ff;
+    --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 12px 32px rgb(0 0 0 / 35%);
+  }
+}

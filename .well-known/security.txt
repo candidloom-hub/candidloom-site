@@ -1,0 +1,5 @@
+Contact: mailto:loomcandid@gmail.com
+Expires: 2027-10-12T00:00:00.000Z
+Policy: https://candidloom-hub.github.io/ai-prompt-leak-guard/security.html#disclosure
+Preferred-Languages: en
+Canonical: https://candidloom.com/.well-known/security.txt
