@@ -551,6 +551,11 @@ p {
   display: block;
 }
 
+.shot figcaption {
+  margin-top: 12px;
+  text-align: center;
+}
+
 /* What it catches */
 
 .catch-grid {
