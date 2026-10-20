@@ -3,138 +3,197 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CandidLoom — privacy-first tools</title>
-  <meta name="description" content="CandidLoom builds privacy-first developer and security tools that run on your device. First product: AI Prompt Leak Guard, a local-first browser extension." />
+  <title>CandidLoom — privacy tools that keep your data on your device</title>
+  <meta name="description" content="CandidLoom makes privacy tools for people who use AI at work. AI Prompt Leak Guard catches passwords, ID numbers and client details before they reach an AI chat, checked on your own device." />
   <link rel="canonical" href="https://candidloom.com/" />
-  <meta name="theme-color" content="#f4f7fa" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#07101d" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0e0f1e" media="(prefers-color-scheme: dark)" />
   <meta name="color-scheme" content="light dark" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CandidLoom" />
-  <meta property="og:title" content="CandidLoom — privacy-first tools" />
-  <meta property="og:description" content="CandidLoom builds privacy-first developer and security tools that run on your device. First product: AI Prompt Leak Guard, a local-first browser extension." />
+  <meta property="og:title" content="CandidLoom — privacy tools that keep your data on your device" />
+  <meta property="og:description" content="AI Prompt Leak Guard catches passwords, ID numbers and client details before they reach an AI chat, checked on your own device." />
   <meta property="og:url" content="https://candidloom.com/" />
   <meta property="og:image" content="https://candidloom.com/assets/social-card.png" />
   <meta property="og:image:width" content="1400" />
   <meta property="og:image:height" content="560" />
   <meta property="og:image:alt" content="AI Prompt Leak Guard — check prompts locally before you send" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CandidLoom — privacy-first tools" />
-  <meta name="twitter:description" content="CandidLoom builds privacy-first developer and security tools that run on your device. First product: AI Prompt Leak Guard, a local-first browser extension." />
+  <meta name="twitter:title" content="CandidLoom — privacy tools that keep your data on your device" />
+  <meta name="twitter:description" content="AI Prompt Leak Guard catches passwords, ID numbers and client details before they reach an AI chat, checked on your own device." />
   <meta name="twitter:image" content="https://candidloom.com/assets/social-card.png" />
   <meta name="twitter:image:alt" content="AI Prompt Leak Guard — check prompts locally before you send" />
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="icon" href="favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CandidLoom",
+    "url": "https://candidloom.com/",
+    "logo": "https://candidloom.com/assets/candidloom-logo.png",
+    "email": "loomcandid@gmail.com"
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="wrap">
+    <div class="site-header-inner">
       <a class="wordmark" href="index.html" aria-label="CandidLoom home"><span class="mark" aria-hidden="true"><span></span><span></span><span></span></span>CandidLoom</a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="index.html#products">Products</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="site-nav-shell" data-open="false">
+        <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Primary"><a href="#product">AI Prompt Leak Guard</a><a href="#pricing">Pricing</a><a href="faq.html">FAQ</a><a href="#contact">Contact</a></nav>
+        <a class="button button-primary button-small nav-cta" href="https://chromewebstore.google.com/detail/ai-prompt-leak-guard/biadjabdfbomjiohhmddppjheadcidjg">Add to Chrome</a>
+      </div>
     </div>
   </header>
+
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap">
-        <p class="eyebrow">CandidLoom</p>
-        <h1 id="hero-title">Privacy-first tools that keep your data <em>on your device</em>.</h1>
-        <p class="lede">CandidLoom builds small, focused developer and security tools. They do their work locally, explain what they protect and what they do not, and never need your private text to function.</p>
-        <div class="actions">
-          <a class="button" href="#products">See products</a>
-          <a class="button secondary" href="#contact">Contact</a>
+    <div class="wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Small tools that keep your data on your device</h1>
+          <p class="lede">CandidLoom makes privacy tools for people who use AI at work. Our first, AI Prompt Leak Guard, catches private details before they reach an AI chat, without ever seeing what you type.</p>
+          <div class="hero-actions" role="group" aria-label="Get started">
+            <a class="button button-primary" href="https://chromewebstore.google.com/detail/ai-prompt-leak-guard/biadjabdfbomjiohhmddppjheadcidjg">Add to Chrome</a>
+            <a class="button button-secondary" href="#product">See how it works</a>
+          </div>
+          <p class="hero-note">Free to use. No account, no tracking.</p>
         </div>
-      </div>
-    </section>
+        <figure class="demo" aria-label="Example: three private details in a prompt are highlighted, then covered before the prompt is sent.">
+          <div class="demo-bar" aria-hidden="true"><span>New chat</span><span>AI Prompt Leak Guard</span></div>
+          <div class="demo-body" aria-hidden="true">
+            <p>Summarise this contract for Rahul. Client PAN <span class="secret">ABCPE1234F</span>, account <span class="secret">50100123456789</span>, contact <span class="secret">rahul.k@example.in</span>.</p>
+          </div>
+          <div class="demo-foot" aria-hidden="true">
+            <span class="demo-found">3 private details covered before sending</span>
+            <span class="status-pill"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Protected</span>
+          </div>
+        </figure>
+      </section>
+    </div>
 
-    <section class="section" id="products" aria-labelledby="products-title">
+    <section class="section" id="product" aria-labelledby="product-title">
       <div class="wrap">
-        <div class="section-head">
-          <span class="index">01 / Products</span>
-          <h2 id="products-title">Products</h2>
-        </div>
-        <article class="product-card" aria-labelledby="aplg-title">
-          <div>
-            <div class="product-title">
-              <img src="assets/logo.svg" alt="" width="40" height="40" />
-              <h3 id="aplg-title">AI Prompt Leak Guard</h3>
-            </div>
-            <p class="status">Live on the Chrome Web Store, Microsoft Edge Add-ons and Firefox Add-ons</p>
-            <p class="tagline">Check sensitive text locally before sending an AI prompt.</p>
-            <p class="muted">A local-first Manifest V3 browser extension for Edge, Chrome and Firefox. It checks prompts on AI chat sites such as ChatGPT, Claude, Gemini, Perplexity and more.</p>
-            <ul class="points">
-              <li><strong>Warn, redact or block</strong> secrets, personal data and your own custom sensitive terms before a prompt is sent.</li>
-              <li><strong>All detection runs on-device.</strong> Prompt text is not sent to AI Prompt Leak Guard or CandidLoom.</li>
-              <li><strong>No telemetry by default,</strong> and free local protection needs no account or payment.</li>
-              <li><strong>Plus — INR 99 per person per month</strong> adds local inspection of readable selected uploads.</li>
+        <div class="feature">
+          <div class="feature-copy">
+            <h2 id="product-title">AI Prompt Leak Guard</h2>
+            <p>A browser extension that checks what you are about to send to ChatGPT, Claude, Gemini and other AI chats. If it spots a password, an Aadhaar or PAN number, a card number or a client's details, it pauses and shows you what it found. You decide what goes.</p>
+            <ul class="checklist">
+              <li>50+ kinds of private details, tuned for India</li>
+              <li>Remove them in one click, or send anyway</li>
+              <li>Works on 16 popular AI chat sites</li>
+              <li>Everything is checked on your computer</li>
             </ul>
-            <div class="actions">
-              <a class="button" href="https://chromewebstore.google.com/detail/ai-prompt-leak-guard/biadjabdfbomjiohhmddppjheadcidjg">Get it for Chrome</a>
-              <a class="button" href="https://microsoftedge.microsoft.com/addons/detail/lnjedjbddbcmophmmccomjanllkcdajj">Get it for Microsoft Edge</a>
-              <a class="button" href="https://addons.mozilla.org/en-US/firefox/addon/ai-prompt-leak-guard/">Get it for Firefox</a>
-              <a class="button secondary" href="https://candidloom-hub.github.io/ai-prompt-leak-guard/">Product site</a>
-              <a class="button secondary" href="https://aplg-billing-production.pages.dev/checkout">Buy Plus</a>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://chromewebstore.google.com/detail/ai-prompt-leak-guard/biadjabdfbomjiohhmddppjheadcidjg">Add to Chrome</a>
+              <a class="button button-secondary" href="https://microsoftedge.microsoft.com/addons/detail/lnjedjbddbcmophmmccomjanllkcdajj">Add to Microsoft Edge</a>
+              <a class="button button-secondary" href="https://addons.mozilla.org/en-US/firefox/addon/ai-prompt-leak-guard/">Add to Firefox</a>
             </div>
+            <p class="meta">Available for Chrome, Edge and Firefox. <a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/">Visit the product site</a></p>
           </div>
-          <figure class="shot">
-            <img src="assets/popup-local-first.png" alt="AI Prompt Leak Guard popup showing local-first protection status" width="1280" height="720" loading="lazy" decoding="async" />
-            <figcaption>The extension popup shows local-first protection status.</figcaption>
-          </figure>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap two-col">
-        <div>
-          <div class="section-head">
-            <span class="index">02 / About</span>
-            <h2 id="about-title">About CandidLoom</h2>
-          </div>
-          <div class="prose">
-            <p>CandidLoom is the brand behind AI Prompt Leak Guard. It is operated by SUNIL KUMAR GURJALA as an individual business.</p>
-            <p>We build tools that help people review sensitive text before it leaves their hands. Detection can miss information, so our tools supplement your own review and your organization's rules rather than replace them.</p>
-          </div>
+          <figure class="shot"><picture><source srcset="assets/shots/warning-dark.png" media="(prefers-color-scheme: dark)" /><img src="assets/shots/warning-light.png" alt="The AI Prompt Leak Guard warning listing a PAN number, an email address and a card number, with buttons to remove them" width="440" height="756" loading="lazy" decoding="async" /></picture><figcaption class="meta">The new look, with Preview redaction and Not sensitive, is coming in the next update.</figcaption></figure>
         </div>
-        <ul class="principles">
-          <li><strong>Local first</strong><span class="muted">Processing happens in your browser, on your device.</span></li>
-          <li><strong>Candid about limits</strong><span class="muted">We say what is protected, what is not, and what is still pending.</span></li>
-          <li><strong>No tracking</strong><span class="muted">This site sets no cookies and loads no analytics.</span></li>
-        </ul>
       </div>
     </section>
 
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="wrap two-col">
+    <section class="section" aria-labelledby="values-title">
+      <div class="wrap">
         <div class="section-head">
-          <span class="index">03 / Contact</span>
-          <h2 id="contact-title">Contact</h2>
+          <h2 id="values-title">How we build</h2>
+          <p>Privacy tools should not become another place your data goes.</p>
         </div>
-        <div class="contact-box">
-          <a class="email" href="mailto:loomcandid@gmail.com">loomcandid@gmail.com</a>
-          <p>Product, privacy or business questions are welcome. Please describe issues with made-up examples and never send real prompts, customer data, passwords or keys.</p>
-          <p style="margin:0">Product help: <a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/support.html">AI Prompt Leak Guard support</a></p>
+        <div class="catch-grid">
+          <article class="catch">
+            <h3>Your data stays with you</h3>
+            <p>Our tools do their work on your device. We do not receive your prompts, your files or your browsing.</p>
+          </article>
+          <article class="catch">
+            <h3>Honest about limits</h3>
+            <p>We say clearly what is protected and what is not. No tool catches everything, and we never pretend otherwise.</p>
+          </article>
+          <article class="catch">
+            <h3>No tracking, no ads</h3>
+            <p>This website sets no cookies and loads no analytics. Our products show no ads and sell nothing about you.</p>
+          </article>
+          <article class="catch">
+            <h3>Made for real work</h3>
+            <p>Built in India for people who handle client, patient and customer details every day.</p>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="pricing-title">Simple pricing</h2>
+          <p>Everyday protection is free. Plus adds file checks, presets for your work and more control.</p>
+        </div>
+        <div class="mini-plans">
+          <article class="plan" aria-labelledby="mini-free">
+            <h3 id="mini-free">Free</h3>
+            <p class="price"><span class="price-amount">INR 0</span><span class="price-unit">forever</span></p>
+            <p class="plan-sub">Warnings, one-click removal and every built-in check. No account needed.</p>
+          </article>
+          <article class="plan plan-plus" aria-labelledby="mini-plus">
+            <h3 id="mini-plus">Plus</h3>
+            <p class="price"><span class="price-amount">INR 99</span><span class="price-unit">per month, tax included</span></p>
+            <p class="plan-sub">Checks Word, Excel, PowerPoint and text files before upload, presets for finance, developers and client data, and one key on up to 3 browsers.</p>
+          </article>
+        </div>
+        <p class="price-footnote"><a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/pricing.html">Compare Free and Plus in detail</a>. An annual plan is coming later.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="wrap faq-layout">
+        <div class="section-head">
+          <h2 id="faq-title">Common questions</h2>
+          <p><a href="faq.html">Read all questions</a></p>
+        </div>
+        <div>
+          <details class="faq"><summary>Who is behind CandidLoom?</summary><div class="faq-answer"><p>CandidLoom is run by SUNIL KUMAR GURJALA, an individual business in India. That name may appear at checkout and on payment records.</p></div></details>
+          <details class="faq"><summary>Does AI Prompt Leak Guard send my prompts anywhere?</summary><div class="faq-answer"><p>No. Every check happens in your browser on your own computer. Your prompts never reach CandidLoom or anyone else.</p></div></details>
+          <details class="faq"><summary>Is it really free?</summary><div class="faq-answer"><p>Yes. The free plan has no account and no time limit. Plus is optional, for INR 99 a month.</p></div></details>
+          <details class="faq"><summary>How do I cancel Plus or ask for a refund?</summary><div class="faq-answer"><p>Cancel any time from the checkout page after verifying your email. Your first purchase can be refunded within seven days. See our <a href="refunds.html">refunds policy</a>.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="contact" aria-labelledby="contact-title">
+      <div class="wrap promise">
+        <div class="section-head">
+          <h2 id="contact-title">Talk to us</h2>
+          <p>Questions about the product, privacy or your subscription are welcome. We reply within two business days.</p>
+          <a class="contact-email" href="mailto:loomcandid@gmail.com">loomcandid@gmail.com</a>
+        </div>
+        <ul class="promise-list">
+          <li><strong>Describe problems with made-up examples</strong><span>Never send real prompts, customer data, passwords or keys.</span></li>
+          <li><strong>Product help</strong><span>Answers and guides are on the <a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/docs.html">help pages</a>.</span></li>
+          <li><strong>Plus and billing</strong><span>Buy, activate or manage Plus on the <a href="https://aplg-billing-production.pages.dev/">Plus page</a>.</span></li>
+        </ul>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
-    <div class="wrap">
-      <p class="copyright" style="margin:0">&copy; 2026 CandidLoom</p>
-      <nav aria-label="Footer">
-        <ul>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/">AI Prompt Leak Guard</a></li>
-          <li><a href="mailto:loomcandid@gmail.com">loomcandid@gmail.com</a></li>
-        </ul>
-      </nav>
+    <div class="site-footer-inner">
+      <div class="footer-about">
+        <a class="wordmark" href="index.html"><span class="mark" aria-hidden="true"><span></span><span></span><span></span></span>CandidLoom</a>
+        <p>Small privacy tools that keep your data on your device.</p>
+      </div>
+      <div class="footer-col"><h2>Product</h2><ul><li><a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/">AI Prompt Leak Guard</a></li><li><a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/pricing.html">Pricing</a></li><li><a href="https://aplg-billing-production.pages.dev/">Get Plus</a></li></ul></div>
+      <div class="footer-col"><h2>Help</h2><ul><li><a href="faq.html">FAQ</a></li><li><a href="https://candidloom-hub.github.io/ai-prompt-leak-guard/docs.html">Product help</a></li><li><a href="mailto:loomcandid@gmail.com">Email us</a></li></ul></div>
+      <div class="footer-col"><h2>Legal</h2><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="refunds.html">Refunds</a></li></ul></div>
+      <p class="footer-legal">&copy; 2026 CandidLoom. Operated by SUNIL KUMAR GURJALA. This website sets no cookies and has no analytics or ads.</p>
     </div>
   </footer>
+  <script src="assets/navigation.js"></script>
 </body>
 </html>
